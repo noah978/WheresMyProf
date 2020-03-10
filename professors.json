@@ -12,7 +12,7 @@
           "building": "Palenske",
           "room": "358"
         },
-        "schedule": {}
+        "schedule": { "data": null }
       },
       {
         "name": "Charles Moreau",
