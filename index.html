@@ -2,8 +2,19 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <title>JSON Parsing</title>
+  <title>Where's My Prof</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Noah Keck">
+    <meta name="description" content="WheresMyProf uses crowdsourced information to ">
+    <meta name="revised" content="3/10/2020">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="w3.css" type="text/css"> <!-- https://www.w3schools.com/w3css/4/w3.css -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="assets/fontawesome-free-5.12.1/css/all.css"> <!-- https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
   <style>
     .thumb {
@@ -11,8 +22,21 @@
       border: 1px solid #000;
       margin: 10px 5px 0 0;
     }
-    table {
-      border: 1;
+
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Lato", sans-serif
+    }
+
+    .w3-bar,
+    h1,
+    button {
+      font-family: "Montserrat", sans-serif
     }
 
   </style>
@@ -20,16 +44,63 @@
 
 <body>
 
-  <h2>Create a Table from JSON Data</h2>
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-cyan w3-card w3-left-align w3-large">
+      <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-cyan" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+      <a href="about.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">About Us</a>
+    </div>
 
-  <select id="myselect" onchange="change_myselect(this.value)">
-    <option value="">Choose a department:</option>
-    <option value='mathcs'>Math / Computer Science</option>
-    <option value='music'>Music</option>
-    <option value='physics'>Physics</option>
-  </select>
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+      <a href="about.html" class="w3-bar-item w3-button w3-padding-large">About Us</a>
+    </div>
+  </div>
 
-  <p id="demo"></p>
+  <!-- Header -->
+  <header class="w3-container w3-cyan w3-center" style="padding:128px 16px">
+    <h1 class="w3-margin w3-jumbo">Where's My Prof?</h1>
+    <a href="#section1"><button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Get Started</button></a>
+  </header>
+
+  <!-- First Grid -->
+  <div class="w3-row-padding w3-padding-64 w3-container" id="section1">
+    <div class="w3-content">
+      <h2>Choose a department and/or search by name.</h2>
+
+      <div class="w3-twothird">
+        <select id="myselect" class="w3-select" onchange="change_myselect(this.value)">
+          <option value="">Choose a department:</option>
+          <option value="mathcs">Math / Computer Science</option>
+          <option value="music">Music</option>
+          <option value="physics">Physics</option>
+        </select>
+
+        <input class="w3-input" type="search" onsubmit="create_query(this.value)">
+      </div>
+
+      <div class="w3-third w3-center">
+        <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top" onclick="">Find my professor</button>
+      </div>
+      <p id="demo"></p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-center w3-opacity">
+    <div class="w3-xlarge w3-padding-32">
+      <a href="https://www.facebook.com/"><i class="fab fa-facebook-f w3-hover-opacity"></i></a>
+      <a href="https://instagram.com/"><i class="fab fa-instagram w3-hover-opacity"></i></a>
+      <a href="https://snapchat.com/"><i class="fab fa-snapchat w3-hover-opacity"></i></a>
+      <a href="https://pinterest.com/"><i class="fab fa-pinterest-p w3-hover-opacity"></i></a>
+      <a href="https://twitter.com/"><i class="fab fa-twitter w3-hover-opacity"></i></a>
+      <a href="https://www.linkedin.com/in/"><i class="fab fa-linkedin w3-hover-opacity"></i></a>
+    </div>
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    <p id="copyright"></p>
+    <p><a href="tos.html">Terms of Service</a> - <a href="privacy.html">Privacy Policy</a></p>
+  </footer>
 
   <script>
     /** Not going to lie, this is a pretty hacky implementation, but it works. A better implementation would probably use JQuery. */
@@ -57,11 +128,42 @@
       txt += "</table>";
       document.getElementById("demo").innerHTML = txt;
     }
+    function display_all() {
+      var dbParam, data, x, txt = "";
+      data = window.jsondata;
+      keys = Object.keys(data.department);
+      txt += "<table border='1'>";
+      for (y in keys) {
+        for (x in data.department[y]) {
+          txt += "<tr><td>" + data.department[y][x].name + "</td>";
+          txt += "<td>" + data.department[y][x].email + "</td>";
+          txt += "<td>" + data.department[y][x].phone + "</td></tr>";
+        }
+      }
+      txt += "</table>";
+      document.getElementById("demo").innerHTML = txt;
+    }
+    function create_query(search) {
+
+    }
 
     readJsonFile("professors.json", function(data) {
       window.jsondata = data;
       console.log(data);
     });
+
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+
+    // Writes the copyright statement with the current year. Website was first deployed in March 2020
+    document.getElementById("copyright").innerHTML = "Copyright " + new Date().getFullYear() + " - All Rights Reserved"
 
   </script>
 

@@ -12,7 +12,71 @@
           "building": "Palenske",
           "room": "358"
         },
-        "schedule": { "data": null }
+        "office hours": [
+          "mon": [
+            {
+              "start": {
+                "hour": 0,
+                "minute": 0
+              },
+              "stop": {
+                "hour": 0,
+                "minute": 0
+              }
+            }
+          ],
+          "tue": null,
+          "wed": [
+            {
+              "start": {
+                "hour": 0,
+                "minute": 0
+              },
+              "stop": {
+                "hour": 0,
+                "minute": 0
+              }
+            }
+          ],
+          "thu": null,
+          "fri": [
+            {
+              "start": {
+                "hour": 0,
+                "minute": 0
+              },
+              "stop": {
+                "hour": 0,
+                "minute": 0
+              }
+            }
+          ],
+        ],
+        "schedule": [
+          {
+            "event": "Analytical Physics II",
+            "code": "168",
+            "recur": {
+              "mon": true,
+              "tue": false,
+              "wed": true,
+              "thu": false,
+              "fri": true
+            },
+            "start": {
+              "hour": 8,
+              "minute": 0
+            },
+            "stop": {
+              "hour": 10,
+              "minute": 20
+            },
+            "location": {
+              "building": "Palenske",
+              "room": "321"
+            }
+          }
+        ]
       },
       {
         "name": "Charles Moreau",
