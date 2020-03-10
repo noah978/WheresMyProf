@@ -63,11 +63,22 @@
       {
         "name": "Darren Mason",
         "email": "dmason@albion.edu",
-        "phone": "517-629-XXXX",
+        "phone": "517-629-0826",
         "cell": null,
         "office": {
           "building": "Palenske",
-          "room": "XXX"
+          "room": "224"
+        },
+        "schedule": {}
+      },
+      {
+        "name": "Paul Anderson",
+        "email": "panderson@albion.edu",
+        "phone": "517-629-0304",
+        "cell": null,
+        "office": {
+          "building": "Putnam",
+          "room": "250"
         },
         "schedule": {}
       }
@@ -81,6 +92,19 @@
         "office": {
           "building": "Goodrich Chapel",
           "room": "T-4"
+        },
+        "schedule": {}
+      }
+    ],
+    "anthropology": [
+      {
+        "name": "Meghan Webb",
+        "email": "mfwebb@albion.edu",
+        "phone": "517-629-XXXX",
+        "cell": null,
+        "office": {
+          "building": "Robinson",
+          "room": "319"
         },
         "schedule": {}
       }
