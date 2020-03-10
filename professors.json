@@ -1,0 +1,89 @@
+{
+  "filename": "professors.json",
+  "author": "Noah Keck",
+  "department": {
+    "physics": [
+      {
+        "name": "Philip Voss",
+        "email": "pvoss@albion.edu",
+        "phone": "517-629-0426",
+        "cell": null,
+        "office": {
+          "building": "Palenske",
+          "room": "358"
+        },
+        "schedule": {}
+      },
+      {
+        "name": "Charles Moreau",
+        "email": "cmoreau@albion.edu",
+        "phone": "517-629-XXXX",
+        "cell": null,
+        "office": {
+          "building": "Palenske",
+          "room": "XXX"
+        },
+        "schedule": {}
+      }
+    ],
+    "mathcs": [
+      {
+        "name": "David A. Reimann",
+        "email": "dreimann@albion.edu",
+        "phone": "517-629-0426",
+        "cell": null,
+        "office": {
+          "building": "Putnam",
+          "room": "252"
+        },
+        "schedule": {}
+      },
+      {
+        "name": "Drew Ash",
+        "email": "dash@albion.edu",
+        "phone": "",
+        "cell": null,
+        "office": {
+          "building": "Putnam",
+          "room": "256"
+        },
+        "schedule": {}
+      },
+      {
+        "name": "Mark Bollman",
+        "email": "mbollman@albion.edu",
+        "phone": "517-629-0261",
+        "cell": null,
+        "office": {
+          "building": "Palenske",
+          "room": "226"
+        },
+        "schedule": {}
+      },
+      {
+        "name": "Darren Mason",
+        "email": "dmason@albion.edu",
+        "phone": "517-629-XXXX",
+        "cell": null,
+        "office": {
+          "building": "Palenske",
+          "room": "XXX"
+        },
+        "schedule": {}
+      }
+    ],
+    "music": [
+      {
+        "name": "Samuel McIlhagga",
+        "email": "smcilhagga@albion.edu",
+        "phone": "517-629-0481",
+        "cell": null,
+        "office": {
+          "building": "Goodrich Chapel",
+          "room": "T-4"
+        },
+        "schedule": {}
+      }
+    ]
+  }
+}
