@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<faculty>
+<professor>
+<name>David A. Reimann</name>
+<email>dreimann@albion.edu</email>
+<department>Math/CS</department>
+<picture>dreimann.jpg</picture>
+<phone>517-629-0426</phone>
+<cell></cell>
+<schedule>?</schedule>
+<office>
+	<room>252</room>
+	<building>Putnam</building>
+</office>
+</professor>
+
+<professor>
+<name>Drew Ash</name>
+<email>dash@albion.edu</email>
+<department>Math/CS</department>
+<picture>Dash.jpg</picture>
+<phone></phone>
+<cell></cell>
+<schedule>?</schedule>
+<office>
+	<room>256</room>
+	<building>Putnam</building>
+</office>
+</professor>
+
+<professor>
+<name>Mark Bollman</name>
+<email>mbollman@albion.edu</email>
+<department>Math/CS</department>
+<picture>mbollman.jpg</picture>
+<phone>517-629-0261</phone>
+<cell></cell>
+<schedule>?</schedule>
+<office>
+	<room>226</room>
+	<building>Palenske</building>
+</office>
+</professor>
+
+<professor>
+<name>Samuel Mcilhagga</name>
+<email>smcilhagga@albion.edu</email>
+<department>Music</department>
+<picture>smcilhagga.jpg</picture>
+<phone>517-629-0481</phone>
+<cell></cell>
+<schedule>?</schedule>
+<office>
+	<room>T-4</room>
+	<building>Goodrich Chapel</building>
+</office>
+</professor>
+
+<professor>
+<name>Philip J. Voss</name>
+<email>pvoss@albion.edu</email>
+<department>Physics</department>
+<picture>pvoss.jpg</picture>
+<phone>517-629-0478</phone>
+<cell></cell>
+<schedule>?</schedule>
+<office>
+	<room>328</room>
+	<building>Palenske</building>
+</office>
+</professor>
+</faculty>
