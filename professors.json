@@ -12,12 +12,12 @@
           "building": "Palenske",
           "room": "358"
         },
-        "office hours": [
+        "office hours": {
           "mon": [
             {
               "start": {
                 "hour": 0,
-                "minute": 0
+                "minute":0
               },
               "stop": {
                 "hour": 0,
@@ -30,7 +30,7 @@
             {
               "start": {
                 "hour": 0,
-                "minute": 0
+                "minute":0
               },
               "stop": {
                 "hour": 0,
@@ -43,15 +43,15 @@
             {
               "start": {
                 "hour": 0,
-                "minute": 0
+                "minute":0
               },
               "stop": {
                 "hour": 0,
                 "minute": 0
               }
             }
-          ],
-        ],
+          ]
+        },
         "schedule": [
           {
             "event": "Analytical Physics II",
@@ -87,12 +87,12 @@
           "building": "Palenske",
           "room": "326"
         },
-        "office hours": [
+        "office hours": {
           "mon": [
             {
               "start": {
                 "hour": 0,
-                "minute": 0
+                "minute":0
               },
               "stop": {
                 "hour": 0,
@@ -105,7 +105,7 @@
             {
               "start": {
                 "hour": 0,
-                "minute": 0
+                "minute":0
               },
               "stop": {
                 "hour": 0,
@@ -118,15 +118,15 @@
             {
               "start": {
                 "hour": 0,
-                "minute": 0
+                "minute":0
               },
               "stop": {
                 "hour": 0,
                 "minute": 0
               }
             }
-          ],
-        ],
+          ]
+        },
         "schedule": [
           {
             "event": "Analytical Physics II",
@@ -164,12 +164,12 @@
           "building": "Putnam",
           "room": "252"
         },
-        "office hours": [
+        "office hours": {
           "mon": [
             {
               "start": {
                 "hour": 0,
-                "minute": 0
+                "minute":0
               },
               "stop": {
                 "hour": 0,
@@ -182,7 +182,7 @@
             {
               "start": {
                 "hour": 0,
-                "minute": 0
+                "minute":0
               },
               "stop": {
                 "hour": 0,
@@ -195,15 +195,15 @@
             {
               "start": {
                 "hour": 0,
-                "minute": 0
+                "minute":0
               },
               "stop": {
                 "hour": 0,
                 "minute": 0
               }
             }
-          ],
-        ],
+          ]
+        },
         "schedule": [
           {
             "event": "Analytical Physics II",
@@ -239,12 +239,12 @@
           "building": "Putnam",
           "room": "256"
         },
-        "office hours": [
+        "office hours": {
           "mon": [
             {
               "start": {
                 "hour": 0,
-                "minute": 0
+                "minute":0
               },
               "stop": {
                 "hour": 0,
@@ -257,7 +257,7 @@
             {
               "start": {
                 "hour": 0,
-                "minute": 0
+                "minute":0
               },
               "stop": {
                 "hour": 0,
@@ -270,15 +270,15 @@
             {
               "start": {
                 "hour": 0,
-                "minute": 0
+                "minute":0
               },
               "stop": {
                 "hour": 0,
                 "minute": 0
               }
             }
-          ],
-        ],
+          ]
+        },
         "schedule": [
           {
             "event": "Analytical Physics II",
@@ -314,12 +314,12 @@
           "building": "Palenske",
           "room": "226"
         },
-        "office hours": [
+        "office hours": {
           "mon": [
             {
               "start": {
                 "hour": 0,
-                "minute": 0
+                "minute":0
               },
               "stop": {
                 "hour": 0,
@@ -332,7 +332,7 @@
             {
               "start": {
                 "hour": 0,
-                "minute": 0
+                "minute":0
               },
               "stop": {
                 "hour": 0,
@@ -345,15 +345,15 @@
             {
               "start": {
                 "hour": 0,
-                "minute": 0
+                "minute":0
               },
               "stop": {
                 "hour": 0,
                 "minute": 0
               }
             }
-          ],
-        ],
+          ]
+        },
         "schedule": [
           {
             "event": "Analytical Physics II",
@@ -389,12 +389,12 @@
           "building": "Palenske",
           "room": "224"
         },
-        "office hours": [
+        "office hours": {
           "mon": [
             {
               "start": {
                 "hour": 0,
-                "minute": 0
+                "minute":0
               },
               "stop": {
                 "hour": 0,
@@ -407,7 +407,7 @@
             {
               "start": {
                 "hour": 0,
-                "minute": 0
+                "minute":0
               },
               "stop": {
                 "hour": 0,
@@ -420,15 +420,15 @@
             {
               "start": {
                 "hour": 0,
-                "minute": 0
+                "minute":0
               },
               "stop": {
                 "hour": 0,
                 "minute": 0
               }
             }
-          ],
-        ],
+          ]
+        },
         "schedule": [
           {
             "event": "Analytical Physics II",
@@ -464,12 +464,12 @@
           "building": "Putnam",
           "room": "250"
         },
-        "office hours": [
+        "office hours": {
           "mon": [
             {
               "start": {
                 "hour": 0,
-                "minute": 0
+                "minute":0
               },
               "stop": {
                 "hour": 0,
@@ -482,7 +482,7 @@
             {
               "start": {
                 "hour": 0,
-                "minute": 0
+                "minute":0
               },
               "stop": {
                 "hour": 0,
@@ -495,15 +495,15 @@
             {
               "start": {
                 "hour": 0,
-                "minute": 0
+                "minute":0
               },
               "stop": {
                 "hour": 0,
                 "minute": 0
               }
             }
-          ],
-        ],
+          ]
+        },
         "schedule": [
           {
             "event": "Analytical Physics II",
@@ -541,12 +541,12 @@
           "building": "Goodrich Chapel",
           "room": "T-4"
         },
-        "office hours": [
+        "office hours": {
           "mon": [
             {
               "start": {
                 "hour": 0,
-                "minute": 0
+                "minute":0
               },
               "stop": {
                 "hour": 0,
@@ -559,7 +559,7 @@
             {
               "start": {
                 "hour": 0,
-                "minute": 0
+                "minute":0
               },
               "stop": {
                 "hour": 0,
@@ -572,15 +572,15 @@
             {
               "start": {
                 "hour": 0,
-                "minute": 0
+                "minute":0
               },
               "stop": {
                 "hour": 0,
                 "minute": 0
               }
             }
-          ],
-        ],
+          ]
+        },
         "schedule": [
           {
             "event": "Analytical Physics II",
@@ -608,7 +608,7 @@
         ]
       }
     ],
-    "anthropology": [
+    "anthro": [
       {
         "name": "Meghan Webb",
         "email": "mfwebb@albion.edu",
@@ -618,12 +618,12 @@
           "building": "Robinson",
           "room": "319"
         },
-        "office hours": [
+        "office hours": {
           "mon": [
             {
               "start": {
                 "hour": 0,
-                "minute": 0
+                "minute":0
               },
               "stop": {
                 "hour": 0,
@@ -636,7 +636,7 @@
             {
               "start": {
                 "hour": 0,
-                "minute": 0
+                "minute":0
               },
               "stop": {
                 "hour": 0,
@@ -649,15 +649,15 @@
             {
               "start": {
                 "hour": 0,
-                "minute": 0
+                "minute":0
               },
               "stop": {
                 "hour": 0,
                 "minute": 0
               }
             }
-          ],
-        ],
+          ]
+        },
         "schedule": [
           {
             "event": "Analytical Physics II",
