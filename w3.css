@@ -1363,6 +1363,11 @@ a {
 }
 
 /* Colors */
+
+.blue-gradient {
+  background-image: radial-gradient(circle, rgba(22, 58, 212, 0.6), rgba(22, 58, 212, 1));
+}
+
 .w3-amber, .w3-hover-amber:hover {
   color: #000 !important;
   background-color: #ffc107 !important
