@@ -583,26 +583,49 @@
         },
         "schedule": [
           {
-            "event": "Analytical Physics II",
-            "code": "168",
+            "event": "Jazz Ensemble",
+            "code": "",
+            "recur": {
+              "mon": false,
+              "tue": true,
+              "wed": false,
+              "thu": true,
+              "fri": false
+            },
+            "start": {
+              "hour": 16,
+              "minute": 15
+            },
+            "stop": {
+              "hour": 18,
+              "minute": 00
+            },
+            "location": {
+              "building": "Goodrich Chapel",
+              "room": "127"
+            }
+          },
+          {
+            "event": "Symphonic Wind Ensemble",
+            "code": "",
             "recur": {
               "mon": true,
               "tue": false,
               "wed": true,
               "thu": false,
-              "fri": true
+              "fri": false
             },
             "start": {
-              "hour": 8,
-              "minute": 0
+              "hour": 16,
+              "minute": 15
             },
             "stop": {
-              "hour": 10,
-              "minute": 20
+              "hour": 18,
+              "minute": 00
             },
             "location": {
-              "building": "Palenske",
-              "room": "321"
+              "building": "Goodrich Chapel",
+              "room": "Stage"
             }
           }
         ]
@@ -660,26 +683,126 @@
         },
         "schedule": [
           {
-            "event": "Analytical Physics II",
-            "code": "168",
+            "event": "Global Health 101",
+            "code": "279",
             "recur": {
               "mon": true,
               "tue": false,
               "wed": true,
               "thu": false,
-              "fri": true
+              "fri": false
             },
             "start": {
-              "hour": 8,
-              "minute": 0
+              "hour": 14,
+              "minute": 15
             },
             "stop": {
-              "hour": 10,
-              "minute": 20
+              "hour": 15,
+              "minute": 00
             },
             "location": {
-              "building": "Palenske",
-              "room": "321"
+              "building": "Olin",
+              "room": "235"
+            }
+          }
+        ]
+      }
+    ],
+    "psych" : [
+      {
+        "name": "Holger Elischberger",
+        "email": "helischberger@albion.edu",
+        "phone": "517-629-XXXX",
+        "cell": null,
+        "office": {
+          "building": "Olin",
+          "room": "XXX"
+        },
+        "office hours": {
+          "mon": [
+            {
+              "start": {
+                "hour": 0,
+                "minute":0
+              },
+              "stop": {
+                "hour": 0,
+                "minute": 0
+              }
+            }
+          ],
+          "tue": null,
+          "wed": [
+            {
+              "start": {
+                "hour": 0,
+                "minute":0
+              },
+              "stop": {
+                "hour": 0,
+                "minute": 0
+              }
+            }
+          ],
+          "thu": null,
+          "fri": [
+            {
+              "start": {
+                "hour": 0,
+                "minute":0
+              },
+              "stop": {
+                "hour": 0,
+                "minute": 0
+              }
+            }
+          ]
+        },
+        "schedule": [
+          {
+            "event": "Child and Adolescent Development - Section 1",
+            "code": "XXX",
+            "recur": {
+              "mon": false,
+              "tue": true,
+              "wed": false,
+              "thu": true,
+              "fri": false
+            },
+            "start": {
+              "hour": 14,
+              "minute": 15
+            },
+            "stop": {
+              "hour": 16,
+              "minute": 05
+            },
+            "location": {
+              "building": "Olin",
+              "room": "XXX"
+            }
+          },
+          {
+            "event": "Child and Adolescent Development - Section 2",
+            "code": "XXX",
+            "recur": {
+              "mon": true,
+              "tue": false,
+              "wed": true,
+              "thu": false,
+              "fri": false
+            },
+            "start": {
+              "hour": 10,
+              "minute": 30
+            },
+            "stop": {
+              "hour": 12,
+              "minute": 50
+            },
+            "location": {
+              "building": "Olin",
+              "room": "XXX"
             }
           }
         ]
