@@ -33,7 +33,7 @@
         <option value='mathcs'>Math / Computer Science</option>
         <option value='music'>Music</option>
         <option value='physics'>Physics</option>
-        <option value='anthropology'>Anthropology</option>
+        <option value='anthro'>Anthropology</option>
       </select>
     </div>
 
@@ -53,6 +53,11 @@
     <p id="demo" class="w3-center"></p>
   </div>
 
+  <footer class="w3-container w3-center w3-opacity w3-margin-bottom">
+    <h5><a href="#" class="w3-hover-text-amber">Full directory</a></h5>
+    <h5><a href="3" class="w3-hover-text-amber">Support</a></h5>
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-amber w3-text-white">w3.css</a></p>
+  </footer>
 
 
   <script>
@@ -103,7 +108,7 @@
       document.getElementById("demo").innerHTML = txt;
     }
 
-    readJsonFile("professors.json", function(data) {
+    readJsonFile("./professors.json", function(data) {
       window.jsondata = data;
       console.log(data);
     });
