@@ -12,18 +12,146 @@
           "building": "Palenske",
           "room": "358"
         },
-        "schedule": {}
+        "office hours": {
+          "mon": [
+            {
+              "start": {
+                "hour": 0,
+                "minute":0
+              },
+              "stop": {
+                "hour": 0,
+                "minute": 0
+              }
+            }
+          ],
+          "tue": null,
+          "wed": [
+            {
+              "start": {
+                "hour": 0,
+                "minute":0
+              },
+              "stop": {
+                "hour": 0,
+                "minute": 0
+              }
+            }
+          ],
+          "thu": null,
+          "fri": [
+            {
+              "start": {
+                "hour": 0,
+                "minute":0
+              },
+              "stop": {
+                "hour": 0,
+                "minute": 0
+              }
+            }
+          ]
+        },
+        "schedule": [
+          {
+            "event": "Analytical Physics II",
+            "code": "168",
+            "recur": {
+              "mon": true,
+              "tue": false,
+              "wed": true,
+              "thu": false,
+              "fri": true
+            },
+            "start": {
+              "hour": 8,
+              "minute": 0
+            },
+            "stop": {
+              "hour": 10,
+              "minute": 20
+            },
+            "location": {
+              "building": "Palenske",
+              "room": "321"
+            }
+          }
+        ]
       },
       {
         "name": "Charles Moreau",
         "email": "cmoreau@albion.edu",
-        "phone": "517-629-XXXX",
+        "phone": "517-629-0488",
         "cell": null,
         "office": {
           "building": "Palenske",
-          "room": "XXX"
+          "room": "326"
         },
-        "schedule": {}
+        "office hours": {
+          "mon": [
+            {
+              "start": {
+                "hour": 0,
+                "minute":0
+              },
+              "stop": {
+                "hour": 0,
+                "minute": 0
+              }
+            }
+          ],
+          "tue": null,
+          "wed": [
+            {
+              "start": {
+                "hour": 0,
+                "minute":0
+              },
+              "stop": {
+                "hour": 0,
+                "minute": 0
+              }
+            }
+          ],
+          "thu": null,
+          "fri": [
+            {
+              "start": {
+                "hour": 0,
+                "minute":0
+              },
+              "stop": {
+                "hour": 0,
+                "minute": 0
+              }
+            }
+          ]
+        },
+        "schedule": [
+          {
+            "event": "Analytical Physics II",
+            "code": "168",
+            "recur": {
+              "mon": true,
+              "tue": false,
+              "wed": true,
+              "thu": false,
+              "fri": true
+            },
+            "start": {
+              "hour": 8,
+              "minute": 0
+            },
+            "stop": {
+              "hour": 10,
+              "minute": 20
+            },
+            "location": {
+              "building": "Palenske",
+              "room": "321"
+            }
+          }
+        ]
       }
     ],
     "mathcs": [
@@ -36,18 +164,146 @@
           "building": "Putnam",
           "room": "252"
         },
-        "schedule": {}
+        "office hours": {
+          "mon": [
+            {
+              "start": {
+                "hour": 0,
+                "minute":0
+              },
+              "stop": {
+                "hour": 0,
+                "minute": 0
+              }
+            }
+          ],
+          "tue": null,
+          "wed": [
+            {
+              "start": {
+                "hour": 0,
+                "minute":0
+              },
+              "stop": {
+                "hour": 0,
+                "minute": 0
+              }
+            }
+          ],
+          "thu": null,
+          "fri": [
+            {
+              "start": {
+                "hour": 0,
+                "minute":0
+              },
+              "stop": {
+                "hour": 0,
+                "minute": 0
+              }
+            }
+          ]
+        },
+        "schedule": [
+          {
+            "event": "Analytical Physics II",
+            "code": "168",
+            "recur": {
+              "mon": true,
+              "tue": false,
+              "wed": true,
+              "thu": false,
+              "fri": true
+            },
+            "start": {
+              "hour": 8,
+              "minute": 0
+            },
+            "stop": {
+              "hour": 10,
+              "minute": 20
+            },
+            "location": {
+              "building": "Palenske",
+              "room": "321"
+            }
+          }
+        ]
       },
       {
         "name": "Drew Ash",
         "email": "dash@albion.edu",
-        "phone": "",
+        "phone": "517-629-0363",
         "cell": null,
         "office": {
           "building": "Putnam",
           "room": "256"
         },
-        "schedule": {}
+        "office hours": {
+          "mon": [
+            {
+              "start": {
+                "hour": 0,
+                "minute":0
+              },
+              "stop": {
+                "hour": 0,
+                "minute": 0
+              }
+            }
+          ],
+          "tue": null,
+          "wed": [
+            {
+              "start": {
+                "hour": 0,
+                "minute":0
+              },
+              "stop": {
+                "hour": 0,
+                "minute": 0
+              }
+            }
+          ],
+          "thu": null,
+          "fri": [
+            {
+              "start": {
+                "hour": 0,
+                "minute":0
+              },
+              "stop": {
+                "hour": 0,
+                "minute": 0
+              }
+            }
+          ]
+        },
+        "schedule": [
+          {
+            "event": "Analytical Physics II",
+            "code": "168",
+            "recur": {
+              "mon": true,
+              "tue": false,
+              "wed": true,
+              "thu": false,
+              "fri": true
+            },
+            "start": {
+              "hour": 8,
+              "minute": 0
+            },
+            "stop": {
+              "hour": 10,
+              "minute": 20
+            },
+            "location": {
+              "building": "Palenske",
+              "room": "321"
+            }
+          }
+        ]
       },
       {
         "name": "Mark Bollman",
@@ -58,7 +314,71 @@
           "building": "Palenske",
           "room": "226"
         },
-        "schedule": {}
+        "office hours": {
+          "mon": [
+            {
+              "start": {
+                "hour": 0,
+                "minute":0
+              },
+              "stop": {
+                "hour": 0,
+                "minute": 0
+              }
+            }
+          ],
+          "tue": null,
+          "wed": [
+            {
+              "start": {
+                "hour": 0,
+                "minute":0
+              },
+              "stop": {
+                "hour": 0,
+                "minute": 0
+              }
+            }
+          ],
+          "thu": null,
+          "fri": [
+            {
+              "start": {
+                "hour": 0,
+                "minute":0
+              },
+              "stop": {
+                "hour": 0,
+                "minute": 0
+              }
+            }
+          ]
+        },
+        "schedule": [
+          {
+            "event": "Analytical Physics II",
+            "code": "168",
+            "recur": {
+              "mon": true,
+              "tue": false,
+              "wed": true,
+              "thu": false,
+              "fri": true
+            },
+            "start": {
+              "hour": 8,
+              "minute": 0
+            },
+            "stop": {
+              "hour": 10,
+              "minute": 20
+            },
+            "location": {
+              "building": "Palenske",
+              "room": "321"
+            }
+          }
+        ]
       },
       {
         "name": "Darren Mason",
@@ -69,7 +389,71 @@
           "building": "Palenske",
           "room": "224"
         },
-        "schedule": {}
+        "office hours": {
+          "mon": [
+            {
+              "start": {
+                "hour": 0,
+                "minute":0
+              },
+              "stop": {
+                "hour": 0,
+                "minute": 0
+              }
+            }
+          ],
+          "tue": null,
+          "wed": [
+            {
+              "start": {
+                "hour": 0,
+                "minute":0
+              },
+              "stop": {
+                "hour": 0,
+                "minute": 0
+              }
+            }
+          ],
+          "thu": null,
+          "fri": [
+            {
+              "start": {
+                "hour": 0,
+                "minute":0
+              },
+              "stop": {
+                "hour": 0,
+                "minute": 0
+              }
+            }
+          ]
+        },
+        "schedule": [
+          {
+            "event": "Analytical Physics II",
+            "code": "168",
+            "recur": {
+              "mon": true,
+              "tue": false,
+              "wed": true,
+              "thu": false,
+              "fri": true
+            },
+            "start": {
+              "hour": 8,
+              "minute": 0
+            },
+            "stop": {
+              "hour": 10,
+              "minute": 20
+            },
+            "location": {
+              "building": "Palenske",
+              "room": "321"
+            }
+          }
+        ]
       },
       {
         "name": "Paul Anderson",
@@ -80,7 +464,71 @@
           "building": "Putnam",
           "room": "250"
         },
-        "schedule": {}
+        "office hours": {
+          "mon": [
+            {
+              "start": {
+                "hour": 0,
+                "minute":0
+              },
+              "stop": {
+                "hour": 0,
+                "minute": 0
+              }
+            }
+          ],
+          "tue": null,
+          "wed": [
+            {
+              "start": {
+                "hour": 0,
+                "minute":0
+              },
+              "stop": {
+                "hour": 0,
+                "minute": 0
+              }
+            }
+          ],
+          "thu": null,
+          "fri": [
+            {
+              "start": {
+                "hour": 0,
+                "minute":0
+              },
+              "stop": {
+                "hour": 0,
+                "minute": 0
+              }
+            }
+          ]
+        },
+        "schedule": [
+          {
+            "event": "Analytical Physics II",
+            "code": "168",
+            "recur": {
+              "mon": true,
+              "tue": false,
+              "wed": true,
+              "thu": false,
+              "fri": true
+            },
+            "start": {
+              "hour": 8,
+              "minute": 0
+            },
+            "stop": {
+              "hour": 10,
+              "minute": 20
+            },
+            "location": {
+              "building": "Palenske",
+              "room": "321"
+            }
+          }
+        ]
       }
     ],
     "music": [
@@ -93,7 +541,148 @@
           "building": "Goodrich Chapel",
           "room": "T-4"
         },
-        "schedule": {}
+        "office hours": {
+          "mon": [
+            {
+              "start": {
+                "hour": 0,
+                "minute":0
+              },
+              "stop": {
+                "hour": 0,
+                "minute": 0
+              }
+            }
+          ],
+          "tue": null,
+          "wed": [
+            {
+              "start": {
+                "hour": 0,
+                "minute":0
+              },
+              "stop": {
+                "hour": 0,
+                "minute": 0
+              }
+            }
+          ],
+          "thu": null,
+          "fri": [
+            {
+              "start": {
+                "hour": 0,
+                "minute":0
+              },
+              "stop": {
+                "hour": 0,
+                "minute": 0
+              }
+            }
+          ]
+        },
+        "schedule": [
+          {
+            "event": "Analytical Physics II",
+            "code": "168",
+            "recur": {
+              "mon": true,
+              "tue": false,
+              "wed": true,
+              "thu": false,
+              "fri": true
+            },
+            "start": {
+              "hour": 8,
+              "minute": 0
+            },
+            "stop": {
+              "hour": 10,
+              "minute": 20
+            },
+            "location": {
+              "building": "Palenske",
+              "room": "321"
+            }
+          }
+        ]
+      }
+    ],
+    "anthro": [
+      {
+        "name": "Meghan Webb",
+        "email": "mfwebb@albion.edu",
+        "phone": "517-629-XXXX",
+        "cell": null,
+        "office": {
+          "building": "Robinson",
+          "room": "319"
+        },
+        "office hours": {
+          "mon": [
+            {
+              "start": {
+                "hour": 0,
+                "minute":0
+              },
+              "stop": {
+                "hour": 0,
+                "minute": 0
+              }
+            }
+          ],
+          "tue": null,
+          "wed": [
+            {
+              "start": {
+                "hour": 0,
+                "minute":0
+              },
+              "stop": {
+                "hour": 0,
+                "minute": 0
+              }
+            }
+          ],
+          "thu": null,
+          "fri": [
+            {
+              "start": {
+                "hour": 0,
+                "minute":0
+              },
+              "stop": {
+                "hour": 0,
+                "minute": 0
+              }
+            }
+          ]
+        },
+        "schedule": [
+          {
+            "event": "Analytical Physics II",
+            "code": "168",
+            "recur": {
+              "mon": true,
+              "tue": false,
+              "wed": true,
+              "thu": false,
+              "fri": true
+            },
+            "start": {
+              "hour": 8,
+              "minute": 0
+            },
+            "stop": {
+              "hour": 10,
+              "minute": 20
+            },
+            "location": {
+              "building": "Palenske",
+              "room": "321"
+            }
+          }
+        ]
       }
     ],
     "anthropology": [
