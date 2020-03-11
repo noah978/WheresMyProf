@@ -713,7 +713,7 @@
             },
             "stop": {
               "hour": 18,
-              "minute": 00
+              "minute": 0
             },
             "location": {
               "building": "Goodrich Chapel",
@@ -736,7 +736,7 @@
             },
             "stop": {
               "hour": 18,
-              "minute": 00
+              "minute": 0
             },
             "location": {
               "building": "Goodrich Chapel",
@@ -813,7 +813,7 @@
             },
             "stop": {
               "hour": 15,
-              "minute": 00
+              "minute": 0
             },
             "location": {
               "building": "Olin",
@@ -890,7 +890,7 @@
             },
             "stop": {
               "hour": 16,
-              "minute": 05
+              "minute": 5
             },
             "location": {
               "building": "Olin",
