@@ -168,12 +168,12 @@
           "mon": [
             {
               "start": {
-                "hour": 0,
-                "minute":0
+                "hour": 14,
+                "minute":15
               },
               "stop": {
-                "hour": 0,
-                "minute": 0
+                "hour": 15,
+                "minute": 30
               }
             }
           ],
@@ -181,33 +181,33 @@
           "wed": [
             {
               "start": {
-                "hour": 0,
-                "minute":0
+                "hour": 14,
+                "minute":15
               },
               "stop": {
-                "hour": 0,
+                "hour": 17,
                 "minute": 0
               }
             }
           ],
-          "thu": null,
-          "fri": [
+          "thu": [
             {
               "start": {
-                "hour": 0,
-                "minute":0
+                "hour": 14,
+                "minute":15
               },
               "stop": {
-                "hour": 0,
+                "hour": 15,
                 "minute": 0
               }
             }
-          ]
+          ],
+          "fri": null
         },
         "schedule": [
           {
-            "event": "Analytical Physics II",
-            "code": "168",
+            "event": "Introduction to Computer Science I",
+            "code": "CS 171",
             "recur": {
               "mon": true,
               "tue": false,
@@ -216,16 +216,131 @@
               "fri": true
             },
             "start": {
-              "hour": 8,
-              "minute": 0
+              "hour": 10,
+              "minute": 30
             },
             "stop": {
-              "hour": 10,
+              "hour": 11,
+              "minute": 35
+            },
+            "location": {
+              "building": "Palenske",
+              "room": "227"
+            }
+          },
+          {
+            "event": "Software Development",
+            "code": "CS 275",
+            "recur": {
+              "mon": true,
+              "tue": false,
+              "wed": true,
+              "thu": false,
+              "fri": true
+            },
+            "start": {
+              "hour": 11,
+              "minute": 45
+            },
+            "stop": {
+              "hour": 12,
+              "minute": 50
+            },
+            "location": {
+              "building": "Palenske",
+              "room": "223"
+            }
+          },
+          {
+            "event": "Math/CS Department Meeting",
+            "code": "",
+            "recur": {
+              "mon": true,
+              "tue": false,
+              "wed": false,
+              "thu": false,
+              "fri": false
+            },
+            "start": {
+              "hour": 15,
+              "minute": 30
+            },
+            "stop": {
+              "hour": 16,
+              "minute": 30
+            },
+            "location": {
+              "building": "Palenske",
+              "room": "227"
+            }
+          },
+          {
+            "event": "Introduction to Computer Science I - Lab",
+            "code": "CS 171L",
+            "recur": {
+              "mon": false,
+              "tue": true,
+              "wed": false,
+              "thu": false,
+              "fri": false
+            },
+            "start": {
+              "hour": 14,
+              "minute": 15
+            },
+            "stop": {
+              "hour": 16,
               "minute": 20
             },
             "location": {
               "building": "Palenske",
-              "room": "321"
+              "room": "251"
+            }
+          },
+          {
+            "event": "Faculty Meeting",
+            "code": "",
+            "recur": {
+              "mon": false,
+              "tue": false,
+              "wed": false,
+              "thu": true,
+              "fri": false
+            },
+            "start": {
+              "hour": 11,
+              "minute": 45
+            },
+            "stop": {
+              "hour": 12,
+              "minute": 50
+            },
+            "location": {
+              "building": "Norris",
+              "room": "101"
+            }
+          },
+          {
+            "event": "Colloquium in Mathematics and Computer Science",
+            "code": "Math 299/399, CS 299/399",
+            "recur": {
+              "mon": false,
+              "tue": false,
+              "wed": false,
+              "thu": true,
+              "fri": false
+            },
+            "start": {
+              "hour": 15,
+              "minute": 30
+            },
+            "stop": {
+              "hour": 16,
+              "minute": 35
+            },
+            "location": {
+              "building": "Palenske",
+              "room": "227"
             }
           }
         ]
