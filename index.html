@@ -34,14 +34,15 @@
         <option value='music'>Music</option>
         <option value='physics'>Physics</option>
         <option value='anthro'>Anthropology</option>
+        <option value='psych'>Psychology</option>
       </select>
     </div>
 
     <div class="w3-third w3-padding">
-      <input type="text" class="w3-input w3-border" placeholder="Who's your prof?">
+      <input id="profSearch" type="text" class="w3-input w3-border" placeholder="Who's your prof?">
     </div>
     <div class="w3-third w3-padding">
-      <input type="button" class="w3-button w3-gray" id="goButton" name="goButton" value="Find My Prof?" onclick="change_myselect(); toggle_visibility('classSearch');">
+      <input type="button" class="w3-button w3-gray" id="goButton" name="goButton" value="Find My Prof?" onclick="search_time(); toggle_visibility('classSearch');">
     </div>
   </div>
 
@@ -75,20 +76,38 @@
       rawFile.send(null);
     }
 
+    function search_time() {
+      var data, sel, txt, name = "";
+      if (document.getElementById("profSearch").value) {
+        data = window.jsondata;
+        sel = document.getElementById("myselect").value;
+        txt += "<table class=\"w3-table\">";
+        for (x in data.department[sel]) {
+          name = data.department[sel][x].name;
+          if (name.includes(document.getElementById("profSearch").value)) {
+            txt += "<tr><td>" + data.department[sel][x].name + "</td>";
+            txt += "<td>" + data.department[sel][x].email + "</td>";
+            txt += "<td>" + data.department[sel][x].phone + "</td>";
+            txt += "<td>" + data.department[sel][x].office.building + ' ' + data.department[sel][x].office.room + "</td></tr>";
+          }
+        }
+        txt += "</table>";
+        document.getElementById("demo").innerHTML = txt;
+
+      } else {
+        change_myselect();
+      }
+    }
+
     function change_myselect() {
-      var dbParam, data, x, txt = "";
+      var data, x, txt = "";
       sel = document.getElementById("myselect").value;
       data = window.jsondata;
       depts = Object.keys(data.department);
-      console.log(depts);
-      console.log(sel);
       txt += "<table class=\"w3-table\">";
       if (sel === "") {
-        console.log('Here');
         for (const y of depts) {
-          console.log(y);
           for (x in data.department[y]) {
-            console.log(x);
             txt += "<tr><td>" + y.toUpperCase() + "</td>";
             txt += "<td>" + data.department[y][x].name + "</td>";
             txt += "<td>" + data.department[y][x].email + "</td>";
