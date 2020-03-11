@@ -143,7 +143,8 @@
       txt += "<table class=\"w3-table\">";
       for (x in data.department[sel]) {
         txt += "<tr><td>" + data.department[sel][x].name + "</td>";
-        txt += "<td>" + data.department[sel][x].email + "</td>";
+        var email = data.department[sel][x].email
+        txt += "<td><a href=\"mailto:" + email + "\">" + email + "</a></td>";
         txt += "<td>" + data.department[sel][x].phone + "</td></tr>";
       }
       txt += "</table>";
