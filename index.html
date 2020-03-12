@@ -74,7 +74,7 @@
     <div class="w3-content">
       <h2>Choose a department and/or search by name.</h2>
 
-      <div class="w3-twothird">
+      <div class="w3-twothird w3-padding-32">
         <div class="w3-half w3-padding-small">
           <select id="myselect" class="w3-select">
             <option value="">Choose a department:</option>
@@ -85,12 +85,12 @@
           </select>
         </div>
         <div class="w3-half w3-padding-small">
-          <input id="search" class="w3-input" type="search" onsubmit="create_query(this.value)">
+          <input id="search" class="w3-input" type="search" onsubmit="display_results(this.value)">
         </div>
       </div>
 
-      <div class="w3-third w3-center">
-        <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top" onclick="display_results()">Find my professor</button>
+      <div class="w3-third w3-center w3-padding-32">
+        <button class="w3-button w3-cyan w3-padding-large w3-medium" style="font-weight: bold" onclick="display_results()">Find my professor</button>
       </div>
     </div>
   </div>
@@ -132,43 +132,46 @@
       rawFile.send(null);
     }
     function display_results() {
-      var dbParam, data, x, sel, txt = "";
+      var dbParam, data, x, y, sel, search, txt = "";
       sel = document.getElementById("myselect").value;
       search = document.getElementById("search").value;
-      if (sel === "" && search === ""){
+      if (sel === ""){
         display_all();
         return;
       }
       data = window.jsondata;
       txt += "<table class=\"w3-table\">";
       for (x in data.department[sel]) {
-        txt += "<tr><td>" + data.department[sel][x].name + "</td>";
-        var email = data.department[sel][x].email
-        txt += "<td><a href=\"mailto:" + email + "\">" + email + "</a></td>";
-        txt += "<td>" + data.department[sel][x].phone + "</td></tr>";
-      }
-      txt += "</table>";
-      document.getElementById("results").innerHTML = txt;
-    }
-    function display_all() {
-      var dbParam, data, x, txt = "";
-      data = window.jsondata;
-      keys = Object.keys(data.department);
-      txt += "<table class=\"w3-table\">";
-      for (y in keys) {
-        console.log(y);
-        for (x in data.department[y]) {
-          console.log(x);
-          txt += "<tr><td>" + data.department[y][x].name + "</td>";
-          txt += "<td>" + data.department[y][x].email + "</td>";
-          txt += "<td>" + data.department[y][x].phone + "</td></tr>";
+        var prof = data.department[sel][x];
+        if (search === "" || prof.name.toLowerCase().includes(search)){
+          txt += "<tr><td>" + prof.name + "</td>";
+          txt += "<td><a href=\"mailto:" + prof.email + "\">" + prof.email + "</a></td>";
+          txt += "<td>" + prof.phone + "</td></tr>";
         }
       }
       txt += "</table>";
       document.getElementById("results").innerHTML = txt;
     }
-    function create_query(search) {
-
+    function display_all() {
+      var dbParam, data, x, y, search, txt = "";
+      search = document.getElementById("search").value;
+      data = window.jsondata;
+      keys = Object.keys(data.department);
+      txt += "<table class=\"w3-table\">";
+      for (y of keys) {
+        for (x in data.department[y]) {
+          var prof = data.department[y][x];
+          if (search === "" || prof.name.toLowerCase().includes(search)){
+            txt += "<tr><td>" + y.toUpperCase() + "</td>";
+            txt += "<td>" + prof.name + "</td>";
+            txt += "<td><a href=\"mailto:" + prof.email + "\">" + prof.email + "</a></td>";
+            txt += "<td>" + prof.phone + "</td>";
+            txt += "<td>" + prof.office.building + ' ' + prof.office.room + "</td></tr>";
+          }
+        }
+      }
+      txt += "</table>";
+      document.getElementById("results").innerHTML = txt;
     }
 
     readJsonFile("professors.json", function(data) {
@@ -188,6 +191,9 @@
 
     // Writes the copyright statement with the current year. Website was first deployed in March 2020
     document.getElementById("copyright").innerHTML = "Copyright " + new Date().getFullYear() + " - All Rights Reserved"
+
+    // Create a javascript to convert the JSON dept key to the full dept title - Use the function for the dropdown and the display_all function
+
 
   </script>
 
