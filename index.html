@@ -146,7 +146,8 @@
         if (search === "" || prof.name.toLowerCase().includes(search)){
           txt += "<tr><td>" + prof.name + "</td>";
           txt += "<td><a href=\"mailto:" + prof.email + "\">" + prof.email + "</a></td>";
-          txt += "<td>" + prof.phone + "</td></tr>";
+          txt += "<td>" + prof.phone + "</td>";
+          txt += "<td>" + prof.office.building + ' ' + prof.office.room + "</td></tr>";
         }
       }
       txt += "</table>";
