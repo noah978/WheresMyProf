@@ -16,11 +16,11 @@
           "mon": [
             {
               "start": {
-                "hour": 0,
+                "hour": 11,
                 "minute":0
               },
               "stop": {
-                "hour": 0,
+                "hour": 12,
                 "minute": 0
               }
             }
@@ -433,46 +433,57 @@
           "mon": [
             {
               "start": {
-                "hour": 0,
-                "minute":0
+                "hour": 11,
+                "minute": 45
               },
               "stop": {
-                "hour": 0,
-                "minute": 0
+                "hour": 12,
+                "minute": 35
               }
             }
           ],
-          "tue": null,
-          "wed": [
+          "tue": [
             {
               "start": {
-                "hour": 0,
-                "minute":0
+                "hour": 15,
+                "minute": 30
               },
               "stop": {
-                "hour": 0,
-                "minute": 0
+                "hour": 16,
+                "minute": 20
               }
             }
           ],
-          "thu": null,
+          "wed": null,
+          "thu": [
+            {
+              "start": {
+                "hour": 14,
+                "minute": 15
+              },
+              "stop": {
+                "hour": 15,
+                "minute": 5
+              }
+            }
+          ],
           "fri": [
             {
               "start": {
-                "hour": 0,
-                "minute":0
+                "hour": 10,
+                "minute": 35
               },
               "stop": {
-                "hour": 0,
-                "minute": 0
+                "hour": 11,
+                "minute": 35
               }
             }
           ]
         },
         "schedule": [
           {
-            "event": "Analytical Physics II",
-            "code": "168",
+            "event": "Temp Name",
+            "code": "CS 358",
             "recur": {
               "mon": true,
               "tue": false,
@@ -481,8 +492,8 @@
               "fri": true
             },
             "start": {
-              "hour": 8,
-              "minute": 0
+              "hour": 9,
+              "minute": 15
             },
             "stop": {
               "hour": 10,
@@ -490,7 +501,145 @@
             },
             "location": {
               "building": "Palenske",
-              "room": "321"
+              "room": "221"
+            }
+          },
+          {
+            "event": "Perspectives on Gambling",
+            "code": "Honors 135-01",
+            "recur": {
+              "mon": true,
+              "tue": true,
+              "wed": true,
+              "thu": false,
+              "fri": true
+            },
+            "start": {
+              "hour": 13,
+              "minute": 0
+            },
+            "stop": {
+              "hour": 14,
+              "minute": 5
+            },
+            "location": {
+              "building": "Observatory",
+              "room": "1"
+            }
+          },
+          {
+            "event": "Temp Name",
+            "code": "Science 285",
+            "recur": {
+              "mon": true,
+              "tue": true,
+              "wed": true,
+              "thu": false,
+              "fri": true
+            },
+            "start": {
+              "hour": 14,
+              "minute": 15
+            },
+            "stop": {
+              "hour": 15,
+              "minute": 5
+            },
+            "location": {
+              "building": "Palenske",
+              "room": "227"
+            }
+          },
+          {
+            "event": "Math/CS Department Meeting",
+            "code": "",
+            "recur": {
+              "mon": true,
+              "tue": false,
+              "wed": false,
+              "thu": false,
+              "fri": false
+            },
+            "start": {
+              "hour": 15,
+              "minute": 30
+            },
+            "stop": {
+              "hour": 16,
+              "minute": 30
+            },
+            "location": {
+              "building": "Palenske",
+              "room": "227"
+            }
+          },
+          {
+            "event": "Temp Name",
+            "code": "Math 257",
+            "recur": {
+              "mon": true,
+              "tue": false,
+              "wed": false,
+              "thu": false,
+              "fri": false
+            },
+            "start": {
+              "hour": 19,
+              "minute": 0
+            },
+            "stop": {
+              "hour": 20,
+              "minute": 0
+            },
+            "location": {
+              "building": "Palenske",
+              "room": "221"
+            }
+          },
+          {
+            "event": "Benefits Task Force Meeting",
+            "code": "",
+            "recur": {
+              "mon": false,
+              "tue": false,
+              "wed": true,
+              "thu": false,
+              "fri": false
+            },
+            "start": {
+              "hour": 11,
+              "minute": 45
+            },
+            "stop": {
+              "hour": 12,
+              "minute": 35
+            },
+            "location": {
+              "building": "Palenske",
+              "room": "227"
+            }
+          },
+          {
+            "event": "Colloquium in Mathematics and Computer Science",
+            "code": "Math 299/399, CS 299/399",
+            "recur": {
+              "mon": false,
+              "tue": false,
+              "wed": false,
+              "thu": true,
+              "fri": false
+            },
+            "start": {
+              "hour": 15,
+              "minute": 30
+            },
+            "stop": {
+              "hour": 16,
+              "minute": 35
+            },
+            "location": {
+              "building": "Palenske",
+              "room": "227"
             }
           }
         ]
@@ -508,64 +657,259 @@
           "mon": [
             {
               "start": {
-                "hour": 0,
-                "minute":0
+                "hour": 9,
+                "minute": 15
               },
               "stop": {
-                "hour": 0,
-                "minute": 0
+                "hour": 10,
+                "minute": 15
               }
             }
           ],
-          "tue": null,
+          "tue": [
+            {
+              "start": {
+                "hour": 9,
+                "minute": 15
+              },
+              "stop": {
+                "hour": 10,
+                "minute": 15
+              }
+            }
+          ],
           "wed": [
             {
               "start": {
-                "hour": 0,
-                "minute":0
+                "hour": 9,
+                "minute": 15
               },
               "stop": {
-                "hour": 0,
-                "minute": 0
+                "hour": 10,
+                "minute": 15
               }
             }
           ],
-          "thu": null,
-          "fri": [
+          "thu": [
             {
               "start": {
-                "hour": 0,
-                "minute":0
+                "hour": 9,
+                "minute": 15
               },
               "stop": {
-                "hour": 0,
-                "minute": 0
+                "hour": 10,
+                "minute": 15
               }
             }
-          ]
+          ],
+          "fri": null
         },
         "schedule": [
           {
-            "event": "Analytical Physics II",
-            "code": "168",
+            "event": "Temp Name",
+            "code": "Math 313",
             "recur": {
               "mon": true,
-              "tue": false,
+              "tue": true,
               "wed": true,
-              "thu": false,
-              "fri": true
+              "thu": true,
+              "fri": false
             },
             "start": {
               "hour": 8,
               "minute": 0
             },
             "stop": {
+              "hour": 9,
+              "minute": 5
+            },
+            "location": {
+              "building": "Palenske",
+              "room": "221"
+            }
+          },
+          {
+            "event": "Temp Name",
+            "code": "Math 127",
+            "recur": {
+              "mon": true,
+              "tue": true,
+              "wed": true,
+              "thu": true,
+              "fri": false
+            },
+            "start": {
               "hour": 10,
+              "minute": 30
+            },
+            "stop": {
+              "hour": 11,
+              "minute": 35
+            },
+            "location": {
+              "building": "Palenske",
+              "room": "225"
+            }
+          },
+          {
+            "event": "Temp Name",
+            "code": "Math 360",
+            "recur": {
+              "mon": true,
+              "tue": true,
+              "wed": true,
+              "thu": false,
+              "fri": false
+            },
+            "start": {
+              "hour": 13,
+              "minute": 0
+            },
+            "stop": {
+              "hour": 14,
+              "minute": 5
+            },
+            "location": {
+              "building": "Palenske",
+              "room": "221"
+            }
+          },
+          {
+            "event": "Temp Name",
+            "code": "Math 275",
+            "recur": {
+              "mon": true,
+              "tue": true,
+              "wed": true,
+              "thu": true,
+              "fri": false
+            },
+            "start": {
+              "hour": 14,
+              "minute": 15
+            },
+            "stop": {
+              "hour": 15,
               "minute": 20
             },
             "location": {
               "building": "Palenske",
-              "room": "321"
+              "room": "221"
+            }
+          },
+          {
+            "event": "",
+            "code": "Math 313",
+            "recur": {
+              "mon": true,
+              "tue": true,
+              "wed": true,
+              "thu": true,
+              "fri": false
+            },
+            "start": {
+              "hour": 8,
+              "minute": 0
+            },
+            "stop": {
+              "hour": 9,
+              "minute": 5
+            },
+            "location": {
+              "building": "Palenske",
+              "room": "221"
+            }
+          },
+          {
+            "event": "Math/CS Department Meeting",
+            "code": "",
+            "recur": {
+              "mon": true,
+              "tue": false,
+              "wed": false,
+              "thu": false,
+              "fri": false
+            },
+            "start": {
+              "hour": 15,
+              "minute": 30
+            },
+            "stop": {
+              "hour": 16,
+              "minute": 30
+            },
+            "location": {
+              "building": "Palenske",
+              "room": "227"
+            }
+          },
+          {
+            "event": "BSBC",
+            "code": "",
+            "recur": {
+              "mon": false,
+              "tue": false,
+              "wed": true,
+              "thu": false,
+              "fri": false
+            },
+            "start": {
+              "hour": 16,
+              "minute": 0
+            },
+            "stop": {
+              "hour": 17,
+              "minute": 0
+            },
+            "location": {
+              "building": "",
+              "room": ""
+            }
+          },
+          {
+            "event": "Faculty Meeting",
+            "code": "",
+            "recur": {
+              "mon": false,
+              "tue": false,
+              "wed": false,
+              "thu": true,
+              "fri": false
+            },
+            "start": {
+              "hour": 13,
+              "minute": 0
+            },
+            "stop": {
+              "hour": 14,
+              "minute": 05
+            },
+            "location": {
+              "building": "",
+              "room": ""
+            }
+          },
+          {
+            "event": "Colloquium in Mathematics and Computer Science",
+            "code": "Math 299/399, CS 299/399",
+            "recur": {
+              "mon": false,
+              "tue": false,
+              "wed": false,
+              "thu": true,
+              "fri": false
+            },
+            "start": {
+              "hour": 15,
+              "minute": 30
+            },
+            "stop": {
+              "hour": 16,
+              "minute": 35
+            },
+            "location": {
+              "building": "Palenske",
+              "room": "227"
             }
           }
         ]
