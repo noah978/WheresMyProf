@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="author" content="Noah Keck">
     <meta name="description" content="WheresMyProf uses crowdsourced information to provide both professors and students an easy way to share schedule information.">
-    <meta name="revised" content="3/11/2020">
+    <meta name="revised" content="3/16/2020">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
@@ -74,9 +74,9 @@
     <div class="w3-content">
       <h2>Choose a department and/or search by name.</h2>
 
-      <div class="w3-twothird w3-padding-32">
-        <div class="w3-half w3-padding-small">
-          <select id="myselect" class="w3-select">
+      <div class="w3-third w3-padding-16">
+        <div class="w3-padding-small">
+          <select id="myselect" class="w3-select" onchange="display_results()">
             <option value="">Choose a department:</option>
             <option value="anthro">Anthropology and Sociology</option>
             <option value="mathcs">Math and Computer Science</option>
@@ -85,13 +85,19 @@
             <option value="psych">Psychology</option>
           </select>
         </div>
-        <div class="w3-half w3-padding-small">
-          <input id="search" class="w3-input" type="search" placeholder="Enter professor name"  onsubmit="display_results(this.value)">
-        </div>
       </div>
 
-      <div class="w3-third w3-center w3-padding-32">
-        <button class="w3-button w3-cyan w3-padding-large w3-medium" style="font-weight: bold" onclick="display_results()">Find my professor</button>
+      <div class="w3-twothird w3-center">
+        <div class="w3-half w3-padding-small">
+          <div class="w3-padding-16">
+            <input id="search" class="w3-input" type="search" placeholder="Professor name"   onkeyup="display_results()">
+          </div>
+        </div>
+        <div class="w3-half w3-padding-small">
+          <div class="w3-padding-16">
+            <button class="w3-button w3-cyan w3-padding w3-large" style="font-weight: bold" onclick="display_results()">Search</button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -175,6 +181,9 @@
       txt += "</table>";
       document.getElementById("results").innerHTML = txt;
     }
+    function clear_table(){
+      document.getElementById("results").innerHTML = "";
+    }
 
     readJsonFile("professors.json", function(data) {
       window.jsondata = data;
@@ -192,9 +201,10 @@
     }
 
     // Writes the copyright statement with the current year. Website was first deployed in March 2020
-    document.getElementById("copyright").innerHTML = "Copyright " + new Date().getFullYear() + " - All Rights Reserved"
+    document.getElementById("copyright").innerHTML = "Copyright " + new Date().getFullYear() + " - All Rights Reserved";
 
     // Create a javascript to convert the JSON dept key to the full dept title - Use the function for the dropdown and the display_all function
+
 
 
   </script>
